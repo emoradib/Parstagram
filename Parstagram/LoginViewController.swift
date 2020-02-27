@@ -2,7 +2,7 @@
 //  LoginViewController.swift
 //  Parstagram
 //
-//  Created by Adib Thaqif on 2/26/20.
+//  Created by Eamon Moradi on 2/26/20.
 //  Copyright © 2020 Eamon J Moradi-bidhendi. All rights reserved.
 //
 
