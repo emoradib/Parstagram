@@ -102,27 +102,39 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="460"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPi-4I-HAd">
-                                                    <rect key="frame" x="80" y="419" width="248" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ayz-yZ-PcC">
+                                                    <rect key="frame" x="8" y="8" width="356" height="390"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ayz-yZ-PcC" secondAttribute="height" multiplier="178:195" id="ebn-5K-Sui"/>
+                                                        <constraint firstAttribute="height" constant="390" id="xp5-q9-QwW"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jm4-Rc-ozs">
+                                                    <rect key="frame" x="8" y="406" width="45" height="46"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ayz-yZ-PcC">
-                                                    <rect key="frame" x="50" y="53" width="278" height="268"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jm4-Rc-ozs">
-                                                    <rect key="frame" x="15" y="418" width="65" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPi-4I-HAd">
+                                                    <rect key="frame" x="61" y="412" width="75" height="35"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ayz-yZ-PcC" secondAttribute="trailing" constant="8" id="FfJ-yX-QcE"/>
+                                                <constraint firstAttribute="bottom" secondItem="jm4-Rc-ozs" secondAttribute="bottom" constant="8" id="G9s-p0-WYc"/>
+                                                <constraint firstItem="iPi-4I-HAd" firstAttribute="leading" secondItem="jm4-Rc-ozs" secondAttribute="trailing" constant="4" id="Lc1-2j-gA5"/>
+                                                <constraint firstItem="ayz-yZ-PcC" firstAttribute="top" secondItem="fZl-l0-FpX" secondAttribute="top" constant="8" id="SLa-pK-LlC"/>
+                                                <constraint firstItem="jm4-Rc-ozs" firstAttribute="top" secondItem="ayz-yZ-PcC" secondAttribute="bottom" constant="8" id="dhT-oD-7Vr"/>
+                                                <constraint firstItem="ayz-yZ-PcC" firstAttribute="leading" secondItem="fZl-l0-FpX" secondAttribute="leading" constant="8" id="fbS-Fc-viM"/>
+                                                <constraint firstItem="jm4-Rc-ozs" firstAttribute="leading" secondItem="fZl-l0-FpX" secondAttribute="leading" constant="8" id="tB4-DN-4v7"/>
+                                                <constraint firstItem="iPi-4I-HAd" firstAttribute="top" secondItem="ayz-yZ-PcC" secondAttribute="bottom" constant="8" id="wv4-Ip-vVn"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="captionLabel" destination="iPi-4I-HAd" id="il9-Y5-XCg"/>
